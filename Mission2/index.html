@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portail BTS SIO</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            height: 800px;
+        }
+        .nav-frame {
+            width: 30%;
+            height: 800px;
+        }
+        .content-frame {
+            width: 65%;
+            height: 800px;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .header {
+            text-align: center;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!--Amin Chebbi-->
+    <div class="header">
+        <h1>Mission 2</h1>
+        <p>Utilisez la barre de navigation pour accéder aux différentes sections d'informations.</p>
+    </div>
+
+    <div class="container">
+        <!-- Premier cadre : Barre de navigation -->
+        <iframe class="nav-frame" src="nav.html"></iframe>
+
+        <!-- Deuxième cadre : Section de contenu -->
+        <iframe class="content-frame" name="contentFrame"></iframe>
+        <li><a href="../index.html">Retour</a></li>
+    </div>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire et Tableau</title>
+    <script>
+        // Fonction pour charger les données depuis le localStorage
+        function chargerTableau() {
+            const tableau = document.getElementById('tableauInformations');
+            const donneesSauvegardees = JSON.parse(localStorage.getItem('tableauDonnees')) || [];
+
+            // Pour chaque donnée sauvegardée, on crée une ligne dans le tableau
+            donneesSauvegardees.forEach((donnee) => {
+                const nouvelleLigne = tableau.insertRow();
+                nouvelleLigne.insertCell(0).textContent = donnee.nom;
+                nouvelleLigne.insertCell(1).textContent = donnee.prenom;
+                nouvelleLigne.insertCell(2).textContent = donnee.dateNaissance;
+                nouvelleLigne.insertCell(3).textContent = donnee.classe;
+            });
+        }
+
+        // Fonction pour ajouter les données au tableau et les sauvegarder dans le localStorage
+        function ajouterAuTableau(event) {
+            event.preventDefault(); // Empêche le rechargement de la page
+
+            // Récupération des valeurs du formulaire
+            const nom = document.getElementById('nom').value;
+            const prenom = document.getElementById('prenom').value;
+            const dateNaissance = document.getElementById('date_naissance').value;
+            const classe = document.getElementById('classe').value;
+
+            if (!nom || !prenom || !dateNaissance || !classe) {
+                alert("Veuillez remplir tous les champs");
+                return;
+            }
+
+            // Création d'une nouvelle ligne dans le tableau
+            const tableau = document.getElementById('tableauInformations');
+            const nouvelleLigne = tableau.insertRow();
+            nouvelleLigne.insertCell(0).textContent = nom;
+            nouvelleLigne.insertCell(1).textContent = prenom;
+            nouvelleLigne.insertCell(2).textContent = dateNaissance;
+            nouvelleLigne.insertCell(3).textContent = classe;
+
+            // Sauvegarde des données dans le localStorage
+            const donneesSauvegardees = JSON.parse(localStorage.getItem('tableauDonnees')) || [];
+            donneesSauvegardees.push({ nom, prenom, dateNaissance, classe });
+            localStorage.setItem('tableauDonnees', JSON.stringify(donneesSauvegardees));
+
+            // Réinitialisation du formulaire
+            document.getElementById('formulaireInscription').reset();
+        }
+
+        // Fonction pour effacer les données du tableau et du localStorage
+        function effacerTableau() {
+            if (confirm("Êtes-vous sûr de vouloir effacer toutes les données ?")) {
+                localStorage.removeItem('tableauDonnees'); // Supprime les données du localStorage
+                document.getElementById('tableauInformations').innerHTML = `
+                    <tr>
+                        <th>Nom</th>
+                        <th>Prénom</th>
+                        <th>Date de Naissance</th>
+                        <th>Classe</th>
+                    </tr>`;
+            }
+        }
+
+        // Charger les données sauvegardées au démarrage de la page
+        window.onload = chargerTableau;
+    </script>
+</head>
+<body>
+    <h2>Formulaire d'inscription</h2>
+    <form id="formulaireInscription" onsubmit="ajouterAuTableau(event)">
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required><br><br>
+        
+        <label for="prenom">Prénom :</label>
+        <input type="text" id="prenom" name="prenom" required><br><br>
+        
+        <label for="date_naissance">Date de naissance :</label>
+        <input type="date" id="date_naissance" name="date_naissance" required><br><br>
+        
+        <label for="classe">Classe :</label>
+        <select id="classe" name="classe" required>
+            <option value="BTS1">BTS 1</option>
+            <option value="BTS2">BTS 2</option>
+            <option value="L3">L3</option>
+        </select><br><br>
+        
+        <button type="submit">Valider</button>
+        <button type="reset">Annuler</button>
+    </form>
+
+    <h2>Tableau d'informations</h2>
+    <table border="1" id="tableauInformations">
+        <tr>
+            <th>Nom</th>
+            <th>Prénom</th>
+            <th>Date de Naissance</th>
+            <th>Classe</th>
+        </tr>
+        <!-- Les nouvelles lignes seront insérées ici -->
+    </table>
+    <br>
+    <button onclick="effacerTableau()">Effacer le tableau</button>
+</body>
+</html>

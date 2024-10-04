@@ -1,0 +1,190 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #484848;
+    color: #f5f5f5;
+}
+
+main {
+    flex: 1; /* Permet au contenu principal de s'étendre pour remplir l'espace disponible */
+}
+
+header {
+    background-color: #bb0000;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    margin: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline; /*transforme l'élément en élément en ligne.*/
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ff0000;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s; /*vous permettent de choisir : les propriétés à animer en les listant 
+    explicitement. le début de l'animation. la durée de l'animation.*/
+}
+
+nav a:hover {
+    background-color: #000000;
+    color: white;
+}
+
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+footer a {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+footer a:hover {
+    background-color: #ff0000;
+}
+section {
+    padding: 20px;
+}
+
+.event-info {
+    width: 100%; /* Ajuster la largeur selon vos besoins */
+}
+
+.info-container {
+    display: flex; /* Utilise flexbox pour aligner le texte et le logo */
+    align-items: center; /* Centre verticalement le contenu */
+}
+
+.text-content {
+    flex: 1; /* Permet au texte de prendre tout l'espace disponible */
+}
+.text-content p {
+    float: left;
+    width: 80%;
+}
+
+.event-info p {
+    text-align: justify; /* Justifie le texte */
+}
+
+.tedx-logo {
+    width: 400px; /* Ajuster la taille du logo selon vos besoin */
+    margin-left: auto; /* Ajoute un espace entre le texte et le logo */
+    margin-right: 200px;
+}
+
+form {
+    background-color: rgb(45, 39, 39);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(13, 13, 13, 0.1);
+    max-width: 800px;
+    margin: auto;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007acc;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #005ea2;
+}
+
+.carte {
+    background-color: rgb(51, 51, 51);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.reseaux-sociaux a {
+    margin: 0 10px;
+    color: #007acc;
+    text-decoration: none;
+    transition: text-decoration 0.3s;
+}
+
+.reseaux-sociaux a:hover {
+    text-decoration: underline;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="file"],
+input[type="tel"],
+input[type="search"],
+input[type="url"],
+input[type="date"],
+input[type="range"],
+input[type="color"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f5f5f5; /* Couleur des champ */
+    color: #333;
+}
+input[type="color"] {
+height: 40px;
+}
+
+
+
