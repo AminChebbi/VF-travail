@@ -65,16 +65,20 @@ h2 {
 }
 @media screen and (max-width: 768px) {
     body {
-        font-family: Arial, sans-serif;
-        margin: 20px;
+        font-family: Arial, sans-serif; /* Police d'écriture */
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4; /* Couleur de fond légèrement grise */
+        font-size: 16px; /* Taille de police uniforme */
     }
     .cv {
-        width: 800px;
-        margin: 20px auto; 
+        max-width: 780px; /* Largeur du conteneur */
+        margin: auto; /* Centrer le conteneur */
         padding: 20px;
-        background-color: #ffffff;
-        border: 1px solid #ccc;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+        background-color: #ffffff; /* Couleur de fond blanche */
+        border: 5px solid #3388CC; /* Bordure de 5px de couleur #3388CC */
+        border-radius: 10px; /* Coins arrondis */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Ombre noire */
     }
     header {
         background-color: #000000;
