@@ -11,10 +11,13 @@ h1 {
     background-color: #35495e;
     color: #fff;
     padding: 20px;
-    margin-bottom: 30px;
+    margin-bottom: auto;
+    margin-top: 30px ;
 }
 
 ul {
+    margin-bottom: auto;
+    margin-top: auto ;
     list-style-type: none;
     padding: 0;
     max-width: 600px;
@@ -51,7 +54,7 @@ footer {
     color: white;
     position: fixed;
     bottom: 0;
-    width: 100%;
+    width: auto;
 }
 @media screen and (max-width: 768px) {
     body {

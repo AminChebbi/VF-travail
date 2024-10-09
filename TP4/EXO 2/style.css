@@ -1,0 +1,124 @@
+body {
+    background-color: rgb(246, 112, 112);
+}
+header{
+    float: inline-start;
+    background-color: #646464;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+header button {
+    text-align: left;
+    
+}
+.block7 {
+    font-size: x-large;
+    border: 2px solid black;
+    border-radius: 30px;
+    background-color: cornflowerblue;
+    height: fit-content;
+    width: 500px;
+    margin: 10px auto; /* Centered */
+    text-align: center;
+}
+
+.block8 {
+    float: left;
+    font-size: xx-large;
+    border-radius: 30px;
+    border: 2px solid black;
+    background-color: cornflowerblue;
+    height: fit-content;
+    margin-top: 25px;
+    text-align: center;
+    width: 100px;
+}
+
+.block5 {
+    margin-top: 10;
+    background-color: rgb(100, 101, 187);
+    height: 925px;
+    width: 1900px; /* Fixed width */
+    margin: 10px;
+    margin-right: 10px;
+    margin-bottom: 200;
+}
+
+.img{
+    border-radius: 30px;
+    height: fit-content;
+    width: 500px;
+    margin: 10px auto; /* Centered */
+    text-align: center;
+}
+
+.block1, .block2, .block3 {
+    font-style: italic;
+    font-size: large;
+    border: 2px solid black;
+    border-radius: 30px;
+    margin-top: 20px; /* Reduced margin */
+    padding: 20px; /* Added padding for spacing inside the bubble */
+    height: fit-content;
+    width: 460px; /* Uniform width */
+    text-align: justify; /* Justified text */
+    float: left; /* Keep them floated for side by side */
+    margin-left: 10px; /* Space between blocks */
+}
+
+.block1 {
+    background-color: rgb(184, 5, 5);
+}
+
+.block2 {
+    background-color: white;
+}
+
+.block3 {
+    background-color: rgb(184, 5, 5);
+}
+
+
+.block9, .block10, .block11 {
+    font-style: italic;
+    font-size: large;
+    border: 2px solid black;
+    border-radius: 30px;
+    margin-left: 30px;
+    margin-top: 20px;
+    width: 400px; /* Uniform width */
+    text-align: center;
+}
+
+.block9 {
+    background-color: rgb(223, 51, 51);
+}
+
+.block10 {
+    background-color: white(25, 236, 138);
+}
+
+.block11 {
+    background-color: rgb(223, 51, 51);
+}
+footer {
+    position: fixed;
+    bottom:0;
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+footer a {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
