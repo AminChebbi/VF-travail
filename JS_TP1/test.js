@@ -46,10 +46,14 @@ function calcul_moyenne() {
     let moyenneFormatee = moyenne.toFixed(2);
     document.write("voici la moyenne : " + moyenneFormatee + "<br>");
     
-    if (moyenne>10) {
-        document.write("ADMIS");
-    }
-    else {
+    if (moyenne<10) {
         document.write("REFUSER")
     }
+    else if(moyenne>14) {
+        document.write("MENTION BIEN");
+    }
+    else if(moyenne<14) {
+        document.write("SANS MENTION");
+    }
+   
 }
