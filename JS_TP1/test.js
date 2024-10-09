@@ -52,7 +52,7 @@ function calcul_moyenne() {
     else if(moyenne>14) {
         document.write("MENTION BIEN");
     }
-    else if(moyenne<14) {
+    else{
         document.write("SANS MENTION");
     }
    
