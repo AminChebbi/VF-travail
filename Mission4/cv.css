@@ -45,7 +45,7 @@ header a {
 
 .img {
     padding: 10px;
-    width: auto;
+    max-width: auto;
     height:150px; 
 }
 
