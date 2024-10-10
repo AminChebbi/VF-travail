@@ -1,3 +1,4 @@
+/* Style général */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -11,42 +12,70 @@ h1 {
     background-color: #35495e;
     color: #fff;
     padding: 20px;
-    margin-bottom: auto;
-    margin-top: 30px ;
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
 
-ul {
-    margin-bottom: auto;
-    margin-top: auto ;
+/* Menu principal */
+nav ul {
     list-style-type: none;
     padding: 0;
     max-width: 600px;
     margin: 0 auto;
 }
 
-li {
+nav > ul > li {
     margin: 15px 0;
     background-color: #fff;
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
     transition: transform 0.3s ease;
 }
 
-li:hover {
+nav ul li:hover {
     transform: scale(1.05);
 }
 
-a {
+nav ul li a {
     text-decoration: none;
     color: #3498db;
     font-size: 1.2em;
 }
 
-a:hover {
+nav ul li a:hover {
     color: #2980b9;
 }
 
+/* Style pour les sous-menus */
+nav ul li ul {
+    display: none; /* Cache les sous-menus par défaut */
+    padding-left: 20px;
+}
+
+nav ul li:hover ul {
+    display: block; /* Affiche les sous-menus au survol */
+}
+
+/* Style pour les sous-éléments (liens des sous-menus) */
+nav ul li ul li {
+    background-color: #f8f8f8;
+    margin: 8px 0;
+    box-shadow: none;
+    transform: none;
+}
+
+nav ul li ul li a {
+    font-size: 1em;
+    color: #3498db;
+}
+
+nav ul li ul li a:hover {
+    color: #2980b9;
+}
+
+/* Style du footer */
 footer {
     text-align: center;
     padding: 20px;
@@ -54,8 +83,10 @@ footer {
     color: white;
     position: fixed;
     bottom: 0;
-    width: auto;
+    width: 100%;
 }
+
+/* Responsive design */
 @media screen and (max-width: 768px) {
     body {
         font-family: Arial, sans-serif;
@@ -73,14 +104,14 @@ footer {
         margin-bottom: 30px;
     }
     
-    ul {
+    nav ul {
         list-style-type: none;
         padding: 0;
         max-width: 600px;
         margin: 0 auto;
     }
     
-    li {
+    nav ul li {
         margin: 15px 0;
         background-color: #fff;
         padding: 15px;
@@ -89,17 +120,17 @@ footer {
         transition: transform 0.3s ease;
     }
     
-    li:hover {
+    nav ul li:hover {
         transform: scale(1.05);
     }
     
-    a {
+    nav ul li a {
         text-decoration: none;
         color: #3498db;
         font-size: 1.2em;
     }
     
-    a:hover {
+    nav ul li a:hover {
         color: #2980b9;
     }
     
