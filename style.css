@@ -5,11 +5,20 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
+    background-image: url('arriereplan.jpg');
+    background-size: cover; /* L'image couvre tout l'écran */
+    background-position: center; /* Centre l'image */
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Couleur de fond en cas de chargement lent */
+    color: #333;
 }
 
 h1 {
     text-align: center;
-    background-color: #35495e;
+    background-color: #5a7da3;
     color: #fff;
     padding: 20px;
     margin-bottom: 30px;
@@ -79,7 +88,7 @@ nav ul li ul li a:hover {
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #35495e;
+    background-color: #5a7da3;
     color: white;
     position: fixed;
     bottom: 0;
