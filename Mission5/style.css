@@ -1,0 +1,127 @@
+/* Style global pour la page */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('Background.jpg');
+}
+.menu-toggle, .toggle-label {
+    display: none;
+}
+
+/* Style pour la barre de navigation */
+nav {
+    background-color: #3f3f56; /* Couleur de fond sombre */
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none; /* Retire les puces des éléments de liste */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centre les éléments horizontalement */
+}
+
+nav ul li {
+    margin: 0 20px; /* Espace entre les éléments */
+    position: relative;
+}
+.surbrillance:hover{
+    background-color: rgb(0, 0, 255);
+    background-color: rgba(0, 0, 255, 0.5);    font-weight: bold;
+    border-radius: 5px;
+}
+
+nav ul li a {
+    color: #ffffff; /* Couleur du texte blanc */
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background-color: #57577a; /* Couleur de survol */
+    border-radius: 5px;
+    text-decoration: overline yellow;
+}
+
+/* Style pour les sous-menus */
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #3f3f56; /* Même couleur de fond que le menu principal */
+    padding: 10px 0;
+    list-style-type: none;
+    margin: 0;
+}
+
+nav ul li:hover ul {
+    display: block; /* Affiche le sous-menu au survol */
+}
+
+nav ul li ul li {
+    margin: 0;
+}
+
+nav ul li ul li a {
+    padding: 8px 15px;
+    font-size: 16px;
+}
+
+nav ul li ul li a:hover {
+    background-color: #57577a; /* Couleur de survol dans le sous-menu */
+    text-decoration: overline yellow;
+}
+/* Style du footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #5a7da3;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+footer a {
+    color: white;
+}
+footer a:hover {
+    color: red;
+}
+/* Style pour le menu responsive */
+@media screen and (max-width: 680px) {
+    .menu-toggle {
+        display: none; /* Masque la case à cocher */
+    }
+
+    .toggle-label {
+        display: block; /* Affiche le label du menu */
+        cursor: pointer; /* Change le curseur pour indiquer l'interaction */
+        color: #ffffff; /* Couleur du texte du label */
+        font-size: 20px; /* Taille de la police pour le label */
+        text-align: center; /* Centre le label */
+        padding: 10px; /* Ajoute du remplissage autour du label */
+        background-color: #3f3f56; /* Couleur de fond du label */
+    }
+
+    nav ul {
+        display: none; /* Masque le menu par défaut */
+        flex-direction: column; /* Affiche les éléments de manière verticale */
+        align-items: center; /* Centre les éléments horizontalement */
+    }
+
+    /* Affiche le menu lorsque la case est cochée */
+    .menu-toggle:checked + .toggle-label + ul {
+        display: flex; /* Affiche le menu */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Espace vertical entre les éléments */
+    }
+}
+
+
