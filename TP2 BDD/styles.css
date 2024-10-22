@@ -1,0 +1,129 @@
+/* Style général */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    background-image: url('arriereplan.jpg');
+    background-size: cover; /* L'image couvre tout l'écran */
+    background-position: center; /* Centre l'image */
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Couleur de fond en cas de chargement lent */
+}
+
+h1 {
+    text-align: center;
+    background-color: #5a7da3;
+    color: #fff;
+    padding: 20px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.doc-container {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+h2 {
+    text-align: center;
+}
+.download-button {
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding: 12px 20px;
+    color: white;
+    background-color: #007BFF;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.download-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+footer a {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+footer a:hover {
+    background-color: #ff0000;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        color: #333;
+    }
+    
+    h1 {
+        text-align: center;
+        background-color: #35495e;
+        color: #fff;
+        padding: 20px;
+        margin-bottom: 30px;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    
+    nav ul li {
+        margin: 15px 0;
+        background-color: #fff;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+    
+    nav ul li:hover {
+        transform: scale(1.05);
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        color: #3498db;
+        font-size: 1.2em;
+    }
+    
+    nav ul li a:hover {
+        color: #2980b9;
+    }
+    
+    footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #35495e;
+        color: white;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+}
