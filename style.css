@@ -39,7 +39,7 @@ body {
 
 h1 {
     text-align: center;
-    background-color: #5a7da3;
+    background-color: #355475;
     color: #fff;
     padding: 20px;
     margin-bottom: 30px;
@@ -109,7 +109,7 @@ nav ul li ul li a:hover {
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #5a7da3;
+    background-color: #355475;
     color: white;
     position: fixed;
     bottom: 0;
