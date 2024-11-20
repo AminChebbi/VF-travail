@@ -22,39 +22,39 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td> <input class="t" placeholder="Article" type="text" name="t1" id="t1"></td>
-                        <td> <input class="t" placeholder="Prix" type="number" name="t2" id="t2"></td>
-                        <td> <input class="t" placeholder="Quantité" type="number" name="t3" id="t3"></td>
-                        <td> <input class="t34" placeholder="Résultat" type="text" name="t4" id="t4" readonly=""></td>
-                    </tr>
-
-                    <tr>
-                        <td> <input class="t" placeholder="Article" type="text" name="t1" id="t1"></td>
-                        <td> <input class="t" placeholder="Prix" type="number" name="t2" id="t2"></td>
-                        <td> <input class="t" placeholder="Quantité" type="number" name="t3" id="t3"></td>
-                        <td> <input class="t34" placeholder="Résultat" type="text" name="t4" id="t4" readonly=""></td>
-                    </tr>
-
-                    <tr>
-                        <td> <input class="t" placeholder="Article" type="text" name="t1" id="t1"></td>
-                        <td> <input class="t" placeholder="Prix" type="number" name="t2" id="t2"></td>
-                        <td> <input class="t" placeholder="Quantité" type="number" name="t3" id="t3"></td>
-                        <td> <input class="t34" placeholder="Résultat" type="text" name="t4" id="t4" readonly=""></td>
+                        <td> <input class="t" placeholder="Article" type="text" name="t1" id="article"></td>
+                        <td> <input class="t" placeholder="Prix" type="number" name="t2" id="prix1"></td>
+                        <td> <input class="t" placeholder="Quantité" type="number" name="t3" id="quantité1"></td>
+                        <td> <input class="t34" placeholder="Résultat" type="text" name="t4" id="result1" readonly=""></td>
                    </tr>
 
                     <tr>
-                        <td> <input class="t" placeholder="Article" type="text" name="t1" id="t1"></td>
-                        <td> <input class="t" placeholder="Prix" type="number" name="t2" id="t2"></td>
-                        <td> <input class="t" placeholder="Quantité" type="number" name="t3" id="t3"></td>
-                        <td> <input class="t34" placeholder="Résultat" type="text" name="t4" id="t4" readonly=""></td>
+                        <td> <input class="t" placeholder="Article" type="text" name="t1" id="article"></td>
+                        <td> <input class="t" placeholder="Prix" type="number" name="t2" id="prix2"></td>
+                        <td> <input class="t" placeholder="Quantité" type="number" name="t3" id="quantité2"></td>
+                        <td> <input class="t34" placeholder="Résultat" type="text" name="t4" id="result2" readonly=""></td>
+                    </tr>    
+
+                    <tr>
+                        <td> <input class="t" placeholder="Article" type="text" name="t1" id="article"></td>
+                        <td> <input class="t" placeholder="Prix" type="number" name="t2" id="prix3"></td>
+                        <td> <input class="t" placeholder="Quantité" type="number" name="t3" id="quantité3"></td>
+                        <td> <input class="t34" placeholder="Résultat" type="text" name="t4" id="result3" readonly=""></td>
+                    </tr>
+
+                    <tr>
+                        <td> <input class="t" placeholder="Article" type="text" name="t1" id="article"></td>
+                        <td> <input class="t" placeholder="Prix" type="number" name="t2" id="prix4"></td>
+                        <td> <input class="t" placeholder="Quantité" type="number" name="t3" id="quantité4"></td>
+                        <td> <input class="t34" placeholder="Résultat" type="text" name="t4" id="result4" readonly=""></td>
                     </tr>
                 </tbody>
             </table>
             <div>
-                <button onclick="calculateResults()">Total</button>
-                <button onclick="resetTable()">Réinitialiser</button>
-                <input class="t34" placeholder="Total général" type="text" id="grandTotal" readonly="">
-            </div>            
+                <button onclick="calcul()">Total</button>
+                <button onclick="reinitialiser()">Réinitialiser</button>
+                <input class="t34" placeholder="Résultat" type="text" name="resultTotal" id="resultTotal" readonly="">
+            </div>
         </div>
     </center>
     <footer>
