@@ -1,0 +1,42 @@
+.h1{
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+body{
+    background-color: rgb(255, 241, 189);
+}
+button{
+    border-radius: 26px;
+    width: 250px;
+    height: 50px;
+    background-color: rgb(206, 49, 149);
+    border: 2px solid white;
+    font-size: 1.5em;
+    color: white;
+    margin: 30px;
+    transition: 0.2s;
+}
+
+button:hover{
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+    transition: 150ms;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9em;
+}
+
+footer a {
+    text-decoration: none;
+    color: #3e8fef;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
