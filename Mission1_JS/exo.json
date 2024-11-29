@@ -1,0 +1,97 @@
+
+
+{
+    "functions": [
+      {
+        "name": "toggleSolution",
+        "description": "Function to toggle the display of the solution",
+        "code": "function toggleSolution(id) {\n    var solution = document.getElementById(id);\n    solution.style.display = solution.style.display === 'none' ? 'block' : 'none';\n}"
+      },
+      {
+        "name": "toggleDemo",
+        "description": "Function to toggle the display of the demo",
+        "code": "function toggleDemo(id) {\n    var demo = document.getElementById(id);\n    demo.style.display = demo.style.display === 'none' ? 'block' : 'none';\n}"
+      },
+      {
+        "name": "calculateSum",
+        "description": "Exercise 1: Addition of two numbers",
+        "code": "function calculateSum() {\n    var num1 = parseFloat(document.getElementById(\"num1_1\").value);\n    var num2 = parseFloat(document.getElementById(\"num2_1\").value);\n    var result = num1 + num2;\n    document.getElementById(\"result_1\").innerText = \"Le résultat est : \" + result;\n}"
+      },
+      {
+        "name": "calculateProduct",
+        "description": "Exercise 2: Multiplication of two numbers",
+        "code": "function calculateProduct() {\n    var num1 = parseFloat(document.getElementById(\"num1_2\").value);\n    var num2 = parseFloat(document.getElementById(\"num2_2\").value);\n    var result = num1 * num2;\n    document.getElementById(\"result_2\").innerText = \"Le résultat est : \" + result;\n}"
+      },
+      {
+        "name": "calculateDifference",
+        "description": "Exercise 3: Subtraction of two numbers",
+        "code": "function calculateDifference() {\n    var num1 = parseFloat(document.getElementById(\"num1_3\").value);\n    var num2 = parseFloat(document.getElementById(\"num2_3\").value);\n    var result = num1 - num2;\n    document.getElementById(\"result_3\").innerText = \"Le résultat est : \" + result;\n}"
+      },
+      {
+        "name": "calculateQuotient",
+        "description": "Exercise 4: Division of two numbers",
+        "code": "function calculateQuotient() {\n    var num1 = parseFloat(document.getElementById(\"num1_4\").value);\n    var num2 = parseFloat(document.getElementById(\"num2_4\").value);\n    if (num2 === 0) {\n        document.getElementById(\"result_4\").innerText = \"Erreur : Division par zéro!\";\n    } else {\n        var result = num1 / num2;\n        document.getElementById(\"result_4\").innerText = \"Le résultat est : \" + result;\n    }\n}"
+      },
+      {
+        "name": "calculateMax",
+        "description": "Exercise 5: Find the maximum of two numbers",
+        "code": "function calculateMax() {\n    var num1 = parseFloat(document.getElementById(\"num1_5\").value);\n    var num2 = parseFloat(document.getElementById(\"num2_5\").value);\n    var result = Math.max(num1, num2);\n    document.getElementById(\"result_5\").innerText = \"Le maximum est : \" + result;\n}"
+      },
+      {
+        "name": "checkEven",
+        "description": "Exercise 6: Check if a number is even",
+        "code": "function checkEven() {\n    var num = parseInt(document.getElementById(\"num1_6\").value);\n    var result = num % 2 === 0 ? \"Le nombre est pair\" : \"Le nombre est impair\";\n    document.getElementById(\"result_6\").innerText = result;\n}"
+      },
+      {
+        "name": "generatePyramidDemo",
+        "description": "Exercise 7: Generate a pyramid",
+        "code": "function generatePyramidDemo() {\n    const height = parseInt(document.getElementById('height7').value);\n    if (isNaN(height) || height < 1) {\n        document.getElementById('result_7').innerText = \"Veuillez entrer une hauteur valide.\";\n        return;\n    }\n    const pyramid = generatePyramid(height);\n    document.getElementById('result_7').innerText = pyramid;\n}"
+      },
+      {
+        "name": "generatePyramid",
+        "description": "Helper function to generate the pyramid",
+        "code": "function generatePyramid(height) {\n    let pyramidStr = '';\n    for (let i = 1; i <= height; i++) {\n        pyramidStr += ' '.repeat(height - i) + '*'.repeat(2 * i - 1) + '\\n';\n    }\n    return pyramidStr;\n}"
+      },
+      {
+        "name": "calculatePower",
+        "description": "Exercise 8: Calculate the power of a number",
+        "code": "function calculatePower() {\n    var base = parseFloat(document.getElementById(\"base8\").value);\n    var exponent = parseFloat(document.getElementById(\"exponent8\").value);\n    var result = base ** exponent;\n    document.getElementById(\"result_8\").innerText = \"Le résultat est : \" + result;\n}"
+      },
+      {
+        "name": "checkPalindrome",
+        "description": "Exercise 9: Check if a string is a palindrome",
+        "code": "function checkPalindrome() {\n    var str = document.getElementById(\"text9\").value;\n    var reversed = str.split('').reverse().join('');\n    var result = str === reversed ? \"C'est un palindrome\" : \"Ce n'est pas un palindrome\";\n    document.getElementById(\"result_9\").innerText = result;\n}"
+      },
+      {
+        "name": "calculateArraySum",
+        "description": "Exercise 10: Sum of numbers in an array",
+        "code": "function calculateArraySum() {\n    var arr = document.getElementById(\"array10\").value.split(',').map(Number);\n    var result = arr.reduce((acc, num) => acc + num, 0);\n    document.getElementById(\"result_10\").innerText = \"La somme est : \" + result;\n}"
+      },
+      {
+        "name": "generateRandom",
+        "description": "Exercise 11: Generate a random number between two values",
+        "code": "function generateRandom() {\n    var min = parseInt(document.getElementById(\"min11\").value);\n    var max = parseInt(document.getElementById(\"max11\").value);\n    var result = Math.floor(Math.random() * (max - min + 1)) + min;\n    document.getElementById(\"result_11\").innerText = \"Le nombre aléatoire est : \" + result;\n}"
+      },
+      {
+        "name": "sortArray",
+        "description": "Exercise 12: Sort an array",
+        "code": "function sortArray() {\n    var arr = document.getElementById(\"array12\").value.split(',').map(Number);\n    arr.sort((a, b) => a - b);\n    document.getElementById(\"result_12\").innerText = \"Le tableau trié est : \" + arr.join(', ');\n}"
+      },
+      {
+        "name": "findMinimum",
+        "description": "Exercise 13: Find the minimum value in an array",
+        "code": "function findMinimum() {\n    var arr = document.getElementById(\"array13\").value.split(',').map(Number);\n    var result = Math.min(...arr);\n    document.getElementById(\"result_13\").innerText = \"La valeur minimale est : \" + result;\n}"
+      },
+      {
+        "name": "countVowel",
+        "description": "Exercise 14: Count vowels in a string",
+        "code": "function countVowel() {\n    var str = document.getElementById(\"text14\").value;\n    var result = (str.match(/[aeiouAEIOU]/g) || []).length;\n    document.getElementById(\"result_14\").innerText = \"Le nombre de voyelles est : \" + result;\n}"
+      },
+      {
+        "name": "calculateFactorial",
+        "description": "Exercise 15: Calculate the factorial of a number",
+        "code": "function calculateFactorial() {\n    var num = parseInt(document.getElementById(\"num15\").value);\n    function factorial(n) {\n        if (n === 0 || n === 1) {\n            return 1;\n        }\n        return n * factorial(n - 1);\n    }\n    var result = factorial(num);\n    document.getElementById(\"result_15\").innerText = \"La factorielle de \" + num + \" est : \" + result;\n}"
+      }
+    ]
+  }
+  
