@@ -35,6 +35,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4; /* Couleur de fond en cas de chargement lent */
+    
 }
 
 h1 {
@@ -52,6 +53,7 @@ nav ul {
     padding: 0;
     max-width: 600px;
     margin: 0 auto;
+    
 }
 
 nav > ul > li {
