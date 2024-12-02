@@ -3,89 +3,191 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Toutes mes missions et TP</title>
+    <title>Mes Projets et Missions</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-      <!-- Vidéo en arrière-plan -->
-  <video autoplay muted loop id="background-video">
-    <source src="Background.mp4" type="video/mp4">
-  </video>
-    
-    <h1>TOUS MES TRAVAUX</h1>
+    <!-- Vidéo en arrière-plan -->
+    <video autoplay muted loop id="background-video">
+        <source src="Background.mp4" type="video/mp4">
+        Votre navigateur ne prend pas en charge les vidéos.
+    </video>
 
-    <nav>
-        <ul>
-            <li>
-                <a href="#">Missions HTML</a>
-                <ul>
-                    <li><a href="Mission1/index.html"> Mission 1 : Métiers de l'informatique</a></li>
-                    <li><a href="Mission2/index.html">Mission 2 : Portail d'information</a></li>
-                    <li><a href="Mission3/mission3.html">Mission 3 : TEDx</a></li>
-                    <li><a href="Mission4/index.html">Mission 4 : CV </a></li>
-                    <li><a href="Mission5/index.html">Mission 5 : Menu déroulant</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">Missions JS</a>
-                <ul>
-                    <li><a href="Mission1_JS/index.html">Mission 1 : 15 Exercices JavaScript</a></li>
-                </ul>
-            </li>
+    <!-- Menu de navigation -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#missions-html">Missions HTML</a></li>
+                <li><a href="#tp-html">Travaux Pratiques HTML</a></li>
+                <li><a href="#missions-js">Missions JavaScript</a></li>
+                <li><a href="#tp-js">Travaux Pratiques JavaScript</a></li>
+                <li><a href="#bdd">Base de Données</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+            </ul>
+        </nav>
+    </header>
 
-            <li>
-                <a href="#">Travaux Pratiques HTML</a>
-                <ul>
-                    <li><a href="TP1/index.html">TP 1</a></li>
-                    <li><a href="TP2/index.html">TP 2</a></li>
-                    <li><a href="TP3/index.html">TP 3</a></li>
-                    <li><a href="TP4/index.html">TP 4</a></li>
-                </ul>
-            </li>
+    <!-- Section principale -->
+    <section id="hero">
+        <h1>Bienvenue sur Mon Portefeuille</h1>
+        <p>Explorez mes travaux, missions et certifications.</p>
+        <a href="#missions-html" class="btn">Voir mes projets</a>
+    </section>
 
-            <li>
-                <a href="#">TP JavaScript</a>
-                <ul>
-                    <li><a href="JS_TP1/index.html">TP1_JS</a></li>
-                    <li><a href="JS_TP2/index.html">TP2_JS</a></li>
-                    <li><a href="JS_TP3/index.html">TP3_JS</a></li>
-                    <li><a href="JS_TP4/index.html">TP4_JS</a></li>
+    <!-- Section Missions HTML -->
+    <section id="missions-html" class="section">
+        <h2>Missions en HTML</h2>
+        <p>Voici mes missions réalisées en HTML.</p>
+        <div class="cards">
+            <div class="card">
+                <h3>Mission 1</h3>
+                <p>Métiers de l'informatique.</p>
+                <a href="Mission1/index.html" class="btn">Voir plus</a>
+            </div>
+            <div class="card">
+                <h3>Mission 2</h3>
+                <p>Portail d'information.</p>
+                <a href="Mission2/index.html" class="btn">Voir plus</a>
+            </div>
+            <div class="card">
+                <h3>Mission 3</h3>
+                <p>TEDx.</p>
+                <a href="Mission3/mission3.html" class="btn">Voir plus</a>
+            </div>
+            <div class="card">
+                <h3>Mission 4</h3>
+                <p>CV interactif.</p>
+                <a href="Mission4/index.html" class="btn">Voir plus</a>
+            </div>
+            <div class="card">
+                <h3>Mission 5</h3>
+                <p>Menu déroulant.</p>
+                <a href="Mission5/index.html" class="btn">Voir plus</a>
+            </div>
+        </div>
+    </section>
 
-                </ul>
-            </li>
+    <!-- Section Missions JavaScript -->
+    <section id="missions-js" class="section">
+        <h2>Missions en JavaScript</h2>
+        <p>Voici mes missions réalisées en JavaScript.</p>
+        <div class="cards">
+            <div class="card">
+                <h3>Mission 1</h3>
+                <p>15 Exercices JavaScript.</p>
+                <a href="Mission1_JS/index.html" class="btn">Voir plus</a>
+            </div>
+        </div>
+    </section>
 
-            <li>
-                <a href="#">TP BDD</a>
-                <ul>
-                    <li><a href="TP1 BDD/index.html">TP BDD 1</a></li>
-                    <li><a href="TP2 BDD/index.html">TP BDD 2</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">Mission BDD</a>
-                <ul>
-                    <li><a href="Mission BDD 1/Index.html">Mission BDD 1</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">Travaux Perso</a>
-                <ul>
-    
-                </ul>
-            </li>
-            <li>
-                <a href="#">Certfication</a>
-                <ul>
-                    <li><a href="Certification/CNIL/Index.html"> CNIL</a></li>
-                    <li><a href="Certification/MOOC/index.html">ANSSI</a></li>
-                </ul>
-            </li>
+    <!-- Section Travaux Pratiques HTML -->
+    <section id="tp-html" class="section">
+        <h2>Travaux Pratiques en HTML</h2>
+        <p>Voici mes travaux pratiques réalisés en HTML.</p>
+        <div class="cards">
+            <div class="card">
+                <h3>TP 1</h3>
+                <p>Création d'une page simple.</p>
+                <a href="TP1/index.html" class="btn">Voir plus</a>
+            </div>
+            <div class="card">
+                <h3>TP 2</h3>
+                <p>Structure de page HTML avancée.</p>
+                <a href="TP2/index.html" class="btn">Voir plus</a>
+            </div>
+            <div class="card">
+                <h3>TP 3</h3>
+                <p>Formulaire HTML interactif.</p>
+                <a href="TP3/index.html" class="btn">Voir plus</a>
+            </div>
+            <div class="card">
+                <h3>TP 4</h3>
+                <p>Création d'un tableau structuré.</p>
+                <a href="TP4/index.html" class="btn">Voir plus</a>
+            </div>
+        </div>
+    </section>
 
-        </ul>
-    </nav>
+    <!-- Section Travaux Pratiques JavaScript -->
+    <section id="tp-js" class="section">
+        <h2>Travaux Pratiques en JavaScript</h2>
+        <p>Voici mes travaux pratiques réalisés en JavaScript.</p>
+        <div class="cards">
+            <div class="card">
+                <h3>TP 1 JS</h3>
+                <p>Introduction au JavaScript.</p>
+                <a href="JS_TP1/index.html" class="btn">Voir plus</a>
+            </div>
+            <div class="card">
+                <h3>TP 2 JS</h3>
+                <p>Manipulation du DOM.</p>
+                <a href="JS_TP2/index.html" class="btn">Voir plus</a>
+            </div>
+            <div class="card">
+                <h3>TP 3 JS</h3>
+                <p>Applications pratiques.</p>
+                <a href="JS_TP3/index.html" class="btn">Voir plus</a>
+            </div>
+            <div class="card">
+                <h3>TP 4 JS</h3>
+                <p>Exercices avancés.</p>
+                <a href="JS_TP4/index.html" class="btn">Voir plus</a>
+            </div>
+        </div>
+    </section>
 
+    <!-- Section Base de Données -->
+    <section id="mission-bdd" class="section">
+        <h2>Missions en Base de Données</h2>
+        <p>Voici mes missions réalisées en BDD</p>
+        <div class="cards">
+            <div class="card">
+                <h3>Mission BDD</h3>
+                <p>Création d'une BDD</p>
+                <a href="Mission BDD 1/Index.html" class="btn">Voir plus</a>
+            </div>
+        </div>
+    </section>
+    <section id="tp-bdd" class="section">
+        <h2>Projets et Travaux en Base de Données</h2>
+        <p>Voici mes réalisations utilisant des bases de données.</p>
+        <div class="cards">
+            <div class="card">
+                <h3>TP 1 BDD</h3>
+                <p>Manipuler une BDD.</p>
+                <a href="TP1 BDD/index.html" class="btn">Voir plus</a>
+            </div>
+            <div class="card">
+                <h3>TP 2 BDD</h3>
+                <p>Construire une BDD</p>
+                <a href="TP2 BDD/index.html" class="btn">Voir plus</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Certifications -->
+    <section id="certifications" class="section">
+        <h2>Certifications</h2>
+        <p>Voici mes certifications obtenues.</p>
+        <div class="cards">
+            <div class="card">
+                <h3>CNIL</h3>
+                <p>Formation sur la protection des données.</p>
+                <a href="Certification/CNIL/Index.html" class="btn">Voir plus</a>
+            </div>
+            <div class="card">
+                <h3>ANSSI</h3>
+                <p>Formation sur la cybersécurité.</p>
+                <a href="Certification/MOOC/index.html" class="btn">Voir plus</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pied de page -->
     <footer>
-        &copy; 2024 Mes Travaux
+        <p>&copy; 2024 - Mes Projets et Missions</p>
     </footer>
 </body>
 </html>
