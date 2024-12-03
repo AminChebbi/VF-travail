@@ -57,6 +57,7 @@ nav ul li a:hover {
 
 /* Section principale */
 #hero {
+    margin-top: 150px;
     text-align: center;
     padding: 150px 20px;
 }
