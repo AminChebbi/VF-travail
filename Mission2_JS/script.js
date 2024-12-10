@@ -38,6 +38,9 @@ function checkAnswer(questionId) {
     alert(feedbackMessage);
 }
 
+
+
+
 // Fonction pour vérifier toutes les réponses et afficher une correction
 function testqcm() {
     let score = 0; // Score initialisé à zéro
@@ -83,6 +86,8 @@ function testqcm() {
     // Affiche le score final
     correctionContainer.innerHTML += `<h3>Votre score est ${score} / ${totalQuestions}.</h3>`;
 }
+
+
 
 // Fonction reset
 function reset() {
