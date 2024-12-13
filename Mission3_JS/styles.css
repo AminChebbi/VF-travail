@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e4f3f9;
+}
+
+.invoice-container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #93cdd2;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.invoice-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.invoice-header div {
+    width: 45%;
+}
+
+.invoice-header .company-info {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.invoice-header .invoice-title {
+    text-align: right;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.details .address {
+    width: 45%;
+}
+
+.details .address h4 {
+    margin-bottom: 10px;
+}
+
+.table-container {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+thead {
+    background-color: #009688;
+    color: #fff;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.summary {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.summary .totals {
+    width: 50%;
+}
+
+.totals .row {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+.totals .row.bold {
+    font-weight: bold;
+}
+
+.actions {
+    margin-top: 20px;
+    text-align: right;
+}
+
+footer {
+    text-align: center; /* Centre le texte */
+    margin-top: 20px; /* Espacement au-dessus du pied de page */
+    font-size: 0.9em; /* Taille de police réduite */
+}
+
+footer a {
+    text-decoration: none; /* Supprime le soulignement */
+    color: #3e8fef; /* Couleur bleue pour les liens */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Ajoute un soulignement au survol */
+}
