@@ -12,7 +12,7 @@ const correctAnswers = {
     q10: ["a", "d"] // Pour la question 10, plusieurs réponses
 };
 
-// Fonction pour vérifier une réponse individuelle
+// Fonction pour vérifier une SEUL réponse 
 function checkAnswer(questionId) {
     const selectedAnswers = document.querySelectorAll(`input[name="${questionId}"]:checked`);
     const correctAnswer = correctAnswers[questionId];
@@ -37,9 +37,6 @@ function checkAnswer(questionId) {
     // Affiche le message de feedback pour la question
     alert(feedbackMessage);
 }
-
-
-
 
 // Fonction pour vérifier toutes les réponses et afficher une correction
 function testqcm() {
